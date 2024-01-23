@@ -25,8 +25,6 @@ async def on_message(message):
 
         return
 
-
-
     if message.content.lower() == 'hello':
 
         await message.channel.send(f'Hello, {message.author.display_name}!')

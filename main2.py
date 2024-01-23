@@ -26,8 +26,9 @@ def run():
             await ctx.send("nuh")
     
     @bot.command()
-    async def user(ctx, username):
-        embed = user_info.generate_response(username)
+    async def user(ctx, *args):
+        name_query = ' '.join(args)
+        embed = user_info.generate_response(name_query)
         await ctx.send(embed=embed)
         
     bot.run(TOKEN)
