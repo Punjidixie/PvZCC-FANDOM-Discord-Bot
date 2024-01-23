@@ -41,8 +41,7 @@ def time_diff_to_string(diff):
         
 def generate_response(username):
     
-    
-    
+
     j = call_and_get_user_json(username)
     user_info = j["query"]["users"][0]
     
